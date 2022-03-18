@@ -2,37 +2,65 @@
 
 <!DOCTYPE html>
 
+<!--
+    All elements are static
+    Relative is right left bottom and is relative to where it was originally 
+    and does not change the position of anything else // is done by position: relative
+    display: controls the space it takes black, inline block and inline(default)
+    Absolute positions: adding a margin to the parent element- takes position out of the flow
+    position fixed fixes the element on the page
+-->
+
 <html>
     <head>
         <meta charset="utf-8">
         <title>Aryan M Personal Website</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="/Users/aryanmathur2003/Documents/GitHub/private-website/css/styles.css">
+        <link rel="icon" href="/Users/aryanmathur2003/Documents/GitHub/private-website/Images/069097D3-95FE-452F-A1A9-1BF33F8F8BA5-modified.png">
     </head>
     <body>
-
-        <img src="/Users/aryanmathur2003/Documents/GitHub/private-website/Images/069097D3-95FE-452F-A1A9-1BF33F8F8BA5-modified.png" width="150" 
-        height="150"
-        alt="Aryan's Image">
-        <h1>Aryan Mathur</h1>
-        <p><em> CEO and Co-founder of <strong><a href = "https://caravancommerce.com/">Caravan Business Inc.</a></strong></em></p>
-
-        <p>I am a student at Purdue University pursuing computer science</p>
-
-        <hr>
-
-        <h3>Education</h3>
-        <table>
-            <tr>
-                <th><strong>Skills</strong></th> 
-                <th><strong>Description</strong></th>
-
-            </tr>
-            <tr>
-                <td>Java</td>
-                <td>CS 180 Object Oriented Programming<br> as well as AP Computer Science </br></td>
-
-            </tr>
-        </table>
+        <div class="top-container">
+            <h1>I'm Aryan Mathur.</h1>
+            <p>a <span>pro</span>gammer</p>   
+        </div>
+        <div class="middle-container">
+            <div class="profile">
+              <img src="/Users/aryanmathur2003/Documents/GitHub/private-website/Images/069097D3-95FE-452F-A1A9-1BF33F8F8BA5-modified.png" width = "150" height = "150" alt="Profile Photo">
+              <h2>Hello.</h2>
+              <p>I am a freshman at Purdue University studying Computer Science</p>
+            </div>
+            <hr>
+            <div class="skills">
+              <h2>My Skills.</h2>
+              <div class="skill-row">
+                <img class="Skillsimg" src="/Users/aryanmathur2003/Documents/GitHub/private-website/Images/download.jpeg" alt="Skill Image">
+                <h3>Languages and Frameworks</h3>
+                <p>Java | Javascript | C | Typescript | HTML | CSS</p>
+                <p>Node JS | React | Spring | JUnit | Firebase | MongoDB</p>
+              </div>
+              <div class="skill-row">
+                <img class="Skillimg" src="/Users/aryanmathur2003/Documents/GitHub/private-website/Images/IMG_1196 (1).jpg" 
+                width = "150" height = "200" alt="Golf Image">
+                <h3>Golfing</h3>
+                <p>Played competitive golf since middle school. Handicap of 4</p>
+              </div>
+            </div>
+            <hr>
+            <div class="contact-me">
+              <h2>Get In Touch</h2>
+              <a class="btn" href="mailto:name@email.com">CONTACT ME</a>
+            </div>
+          </div>
+          
+          
+          <div class="bottom-container">
+            <a class="footer-link" href="https://www.linkedin.com/aryan-mathur">LinkedIn</a>
+            <a class="footer-link" href="https://twitter.com/aryanm27">Twitter</a>
+            <a class="footer-link" href="https://www.caravancommerce.com">Website</a>
+            <p>© Aryan Mathur.</p>
+          </div>
+        
+        
 
     </body>
 </html>
